@@ -1,0 +1,133 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*******************************************************************/
+
+html{
+	background-color: #cc0;
+}
+
+.gradient {
+	/* Anciens navigateurs */
+	background: url("gradient-bg.png") repeat-x top;
+	-o-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	/* Internet Explorer */
+	*background: none;
+	background: none\0/;
+	filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr=#FF##ff55, endColorstr=#FF##cccc);
+	}
+	@media all and (min-width: 0px) {
+		.gradient {
+			/* Opera */
+			background: url("gradient-bg.svg");
+			/* Navigateurs récents */
+			background-image: -webkit-gradient(
+				linear,
+				left top, left bottom,
+				from(#f50),
+				to(#cc0)
+			);
+			background-image: -webkit-linear-gradient(
+				top,
+				#f50,
+				#cc0
+			);
+			background-image: -moz-linear-gradient(
+				top,
+				#f50,
+				#cc0
+			);
+			background-image: -o-linear-gradient(
+				top,
+				#f50,
+				#cc0
+			);
+			background-image: linear-gradient(
+				top,
+				#f50,
+				#cc0
+			);
+		}
+	}
+
+.postFB{
+	width: 800px;
+	margin: 0 auto;
+	padding: 10px 20px 0 20px;
+	background-color: white;
+}
+
+.postFB h1{
+	font-weight: bold;
+	font-size: 26px;
+}
+
+.titre{
+	width: 600px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.date{
+	font-style: italic;
+	font-size: 14px;
+}
+
+.content{
+	width: 600px;
+	min-height: 150px;
+}
+
+.content img{
+	float: right;
+	margin: -100px -150px 0 0;
+	padding: 10px;
+}
